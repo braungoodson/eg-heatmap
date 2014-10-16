@@ -6,12 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/leaflet/dist/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
+
 	</head>
 <body>
+
+	<div ng-controller="DemoController">
+	        <leaflet center="center" layers="layers" height="300px" width="100%"></leaflet>
+	</div>
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/leaflet/dist/leaflet.js"></script>
+	<script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+	<script src="bower_components/webgl-heatmap-leaflet/js/webgl-heatmap.js"></script>
+	<script src="bower_components/webgl-heatmap-leaflet/js/webgl-heatmap-leaflet.js"></script>
 	<script src="index.js"></script>
 </body>
 </html>

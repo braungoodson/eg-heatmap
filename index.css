@@ -1,0 +1,12 @@
+html,body {
+    height: 98%;
+}
+.angular-leaflet-map {
+    height: 100%;
+}
+.left, .right {
+    float: left;
+    width: 48%;
+    height: 100%;
+    padding-right: 1em;
+}
