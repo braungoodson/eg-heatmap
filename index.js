@@ -9,9 +9,9 @@ angular
 
         angular.extend($scope, {
                 center: {
-                    lat: 34,
+                    lat: 42,
                     lng: -72,
-                    zoom: 6
+                    zoom: 8
                 },
                 layers: {
                     baselayers: {
@@ -35,9 +35,9 @@ angular
         
         setInterval(function(){
           var lat,lng,radius;
-          lat = (Math.random()*10)+34;
-          lng = (Math.random()*-35)-72;
-          radius = 10;
+          lat = (Math.random()*.75)+42;
+          lng = (Math.random()*-.75)-71;
+          radius = .4;
           $scope.center.lat = lat;
           $scope.center.lng = lng;
             $scope.layers.overlays.heatmap.data.push([
